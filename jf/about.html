@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en-US">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+      <title>津昉信息</title>
+      <link rel="icon" href="images/logo2.jpg" type="image/x-icon"/>
+      <link rel="stylesheet" type="text/css" href="css/_style.css" />
+      <link rel="stylesheet" type="text/css" href="css/_mobile.css" />
+      <link rel="stylesheet" type="text/css" href="css/primary-blue.css" />
+      <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+      <script type="text/javascript" src="js/custom-main.js"></script>
+      <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+      <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+      <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+      <!--[if lt IE 9]>
+      <link rel="stylesheet" href="css/IE.css" />
+      <![endif]-->
+      <!--[if lte IE 8]>
+      <script type="text/javascript" src="js/IE.js"></script>
+      <![endif]-->
+   	  <meta name="keyWords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+  	  <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+  	  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=134db1b9cf1f1f2b4427210932b34dcb"></script> 
+	<script type="text/javascript">
+	//默认地理位置设置为上海市浦东新区  
+	window.onload = function() {    
+	    if(navigator.geolocation) {    
+	        navigator.geolocation.getCurrentPosition(showPosition);  
+	            // 百度地图API功能    
+	            var map = new BMap.Map("container");    
+	            var point = new BMap.Point(121.372285,31.172271); 
+	            var marker = new BMap.Marker(point);  // 创建标注
+	        	map.addOverlay(marker); 
+	            map.centerAndZoom(point,15);    
+	            map.enableScrollWheelZoom(true);
+	        return;  
+	    }    
+	    alert("你的浏览器不支持获取地理位置！");  
+	};    
+	function showPosition(position){  
+	  x=position.coords.latitude;   
+	  y=position.coords.longitude;    
+	}  
+	</script>
+   <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4614b68112fee58ae9e52338abca1ac4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+   <style type="text/css">
+   	#count{
+            color: rgba(191, 245, 255, 0.39);
+        }
+   </style>
+  </head>
+   <body >
+      <!-- START Header -->
+      <header>
+         <div class="center-wrap">
+            <div class="companyIdentity">
+               <!-- <a href="page-template-homepage-jquery.html"><img src="content-images/sterling-logo.png" alt="Sterling &ndash; HTML5 Responsive Website Template" /></a> -->
+               <strong style="font-size: 30px;color: #336699;transform: scale(2,1);">津昉信息</strong>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">首页</a></li>
+                  <li>
+                     <a href="product_1.html">产品中心</a>
+                    <!--  <ul class="sub-menu">
+                        <li><a href="page-template-homepage-lightbox-hero.html">Homepage &#8211; Lightbox Hero</a></li>
+                        <li><a href="page-template-homepage-jquery-sidebar.html">Homepage &#8211; jQuery Sidebar</a></li>
+                     </ul> -->
+                  </li>
+                  <li>
+                     <a href="case.html">成功案例</a>
+                    <!--  <ul class="sub-menu">
+                        <li><a href="content-responsive-design.html">Responsive Design</a></li>
+                        <li><a href="content-shortcodes.html">100+ Shortcodes</a></li>
+                       
+                     </ul> -->
+                  </li>
+                  <li>
+                     <a href="scheme.html">资讯</a>
+                    <!--  <ul class="sub-menu">
+                        <li><a href="content-color-autumn.html">Autumn</a></li>
+                        <li><a href="content-color-black.html">Black</a></li>
+                        <li><a href="content-color-blue-grey.html">Blue Grey</a></li>
+                        <li><a href="content-color-coffee.html">Coffee</a></li>
+                       
+                     </ul> -->
+                  </li>
+                  <li ><a href="scheme.html">解决方案</a></li>
+                   <!-- <li><a href="fuwu.html">服务支持</a></li> -->
+                  
+                  <li class="current-menu-item"><a href="about.html">我们</a></li>
+               </ul>
+            </nav>
+            <!-- END Main Navigation -->
+         </div>
+         <!-- END center-wrap -->
+      </header>
+      <!-- END Header -->
+
+      <!-- START small_banner -->
+      <section class="small_banner">
+       <div class="center-wrap">
+          <span class="page-banner-heading" style="font-size: 16px;">关于我们</span>
+       </div>
+       <div class="shadow top"></div>
+       <div class="shadow bottom"></div>
+       <div class="tt-overlay"></div>
+    </section>
+
+
+
+
+<section id="content-container" class="clearfix">
+   <div id="main-wrap" class="clearfix">
+      <!-- START tabs_type_1 -->  
+      <dl class="tabs_type_1">
+         <dt class="current">公司介绍</dt>
+         <dd class="current">
+            <p><strong>上海津昉信息技术公司成立于2004年。是一家专业从事生物制药厂区生产环境、数据机房、智能楼宇等领域智能化系统设计和数据应用软件开发的高科技公司。公司是美国Honeywell (Tridium)公司的认证软件开发的高级合作伙伴和分销商。
+            <br/>公司以美国Honeywell (Tridium)的Niagara框架作为基础架构平台，通过基础侧传感器、模数转换、数据通讯设备的设计和部署，应用侧应用软件开发和实施，为客户打造一体化系统解决方案和智慧型软件应用系统。</strong></p>
+            <p><strong>主要领域：</strong><br/>
+				<strong>*</strong>生物制药领域环境监测、控制和数据应用软件开发<br/>
+				<strong>*</strong>数据机房领域环境监测、控制和数据应用软件开发<br/>
+				<strong>*</strong>节能减排领域系统设计、实施和数据应用软件开发<br/>
+				<strong>*</strong>物联网及应用开发<br/>
+				<strong>*</strong>系统软硬件日常维护和运营维护<br/>
+			</p>
+         </dd>
+  
+         
+         <dt>联系我们</dt>
+         <dd>
+         	<P><strong>技术支持</strong><br>邮箱：296086852@qq.com<br>电话：13020173166</P>
+         	
+         	<P><strong>业务联系</strong><br>邮箱：lxhe@vip.sina.com<br>电话：13916358236</P>
+         	
+            <span><P> <strong>公司地址</strong><br>地址：上海市莲花路1555号501A室<br>电话：022-31658015/  +86 13916358236<br>邮编：200233</P></span>
+         
+            <span><div class="one_half" style="width:641px;height:380px;border:#ccc solid 1px;margin:30px auto" id="container"></div></span>
+         </dd>
+   
+         <dt>招贤纳士</dt>
+         <dd>
+             <img  src="images/about/employee2.jpg" width="700px">
+         </dd>
+         
+         
+         <dt>合作伙伴</dt>
+         <dd>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+         </dd>
+      
+      </dl>
+     
+
+   </div>
+   <!-- END main-wrap -->   
+</section>
+<!-- END content-container -->
+<div id="count" ></div>
+      <footer>
+         <div class="footer-copyright clearfix">
+            <div class="center-wrap clearfix">
+               <div class="foot-copy">
+                  <p>Copyright &copy; 2012 上海津昉信息技术有限公司</p>
+                  <p><a  href="http://www.miitbeian.gov.cn/"target="_blank">沪ICP备17049709号</a></p>
+               </div>
+               <!-- END foot-copy -->
+               <a href="#" id="scroll_to_top" class="link-top">Scroll to Top</a>
+            </div>
+         </div>
+         <div class="shadow top"></div>
+         <div class="tt-overlay"></div>
+      </footer>
+      
+      
+   </body>
+</html>
